@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 30px 0;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  &__time {
+    list-style: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: url(../../images/main-cloud.png);
+    top: 0;
+    right: 0;
+  }
+}
+
+.block__3d {
+  display: flex;
+  align-items: center;
+  img {
+    border: 7px solid #e4e4e4;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  span {
+    font-family: 'Raleway';
+    border-bottom: 1px solid #000000;
+  }
+}
+
+.social {
+  display: flex;
+  &__main {
+    border: 7px solid #319f1c;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px #319f1c;
+  }
+
+  &__contacts {
+    align-items: center;
+  }
+  &__phone-namber {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  &__media {
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .header {
+    &::after {
+      content: '';
+    }
+  }
+  .block__3d {
+    display: none;
+  }
+
+  .social__main {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 30px 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

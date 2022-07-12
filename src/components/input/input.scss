@@ -1,0 +1,20 @@
+.input {
+  border: 1px solid #319f1c;
+  border-radius: 3px;
+  padding: 10px 27px;
+  width: 240px;
+  height: 40px;
+
+  &::placeholder {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363130;
+  }
+
+  &:focus {
+    border: 2px solid #319f1c;
+  }
+}
